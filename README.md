@@ -14,6 +14,10 @@ Discord sunucularını kopyalamak için basit ve etkili bir araç. Rolleri, kana
 - Hedef sunucudaki mevcut kanalları silme seçeneği
 - Rate limit koruması (ayarlanabilir bekleme süreleri)
 
+## HIZLI BİR ŞEKİLDE NASIL KULLANILIR?
+1.Copy.bat dosyasını çalıştır
+2.İşlem bu kadar basit işte karşınızda server cloner!
+
 ## Gereksinimler
 - Python 3.6 veya üstü
 - `requests` kütüphanesi
@@ -22,9 +26,6 @@ Discord sunucularını kopyalamak için basit ve etkili bir araç. Rolleri, kana
 1. Gerekli paketi yükle:
 ``bash
 pip install requests
-
-
-
 
 
 

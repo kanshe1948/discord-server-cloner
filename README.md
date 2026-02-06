@@ -2,6 +2,32 @@
 
 A Python tool for cloning Discord server structure including roles, channels, and server settings.
 
+# Kanshe Server Cloner
+
+Discord sunucularını kopyalamak için basit ve etkili bir araç. Rolleri, kanalları, izinleri, kategorileri ve sunucu ayarlarını birebir klonluyor.
+
+## Özellikler
+- Rolleri kopyalama (izinler, renk, mentionable dahil)
+- Tüm kanal türlerini kopyalama (metin, ses, kategori, forum, stage, announcement vs.)
+- Kanal izinlerini ve kategori yapısını koruma
+- Sunucu ayarlarını kopyalama (doğrulama seviyesi, içerik filtresi, AFK süresi vs.)
+- Hedef sunucudaki mevcut kanalları silme seçeneği
+- Rate limit koruması (ayarlanabilir bekleme süreleri)
+
+## Gereksinimler
+- Python 3.6 veya üstü
+- `requests` kütüphanesi
+
+## Kurulum
+1. Gerekli paketi yükle:
+``bash
+pip install requests
+
+
+
+
+
+
 ## Features
 
 - Clone server roles with permissions, colors, and settings

